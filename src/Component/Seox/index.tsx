@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Search } from 'lucide-react';
 import { motion, useInView } from 'framer-motion';
-import '../seox.css';
+import './seox.css';
 import './responsive.css';
 
 // Reusable smooth fade-up animation component
