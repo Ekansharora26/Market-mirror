@@ -35,6 +35,7 @@
   padding-top: 140px;
   padding-bottom: 1rem;
 }
+
 /* Abstract Mesh Glows */
 .seox-glow-red {
   position: absolute;
@@ -73,7 +74,8 @@
 }
 
 .seox-header {
-  position: absolute; /* Static on hero section initially */
+  position: absolute;
+  /* Static on hero section initially */
   top: 0;
   left: 0;
   width: 100%;
@@ -85,7 +87,8 @@
 }
 
 .seox-header.is-scrolled {
-  position: fixed; /* Becomes moving/sticky */
+  position: fixed;
+  /* Becomes moving/sticky */
   background: rgba(11, 15, 25, 0.8);
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
@@ -95,8 +98,13 @@
 }
 
 @keyframes slideDown {
-  from { transform: translateY(-100%); }
-  to { transform: translateY(0); }
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
 }
 
 .seox-nav {
@@ -328,7 +336,7 @@
 
 .seox-stats-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
 }
 
@@ -338,20 +346,19 @@
   background-color: #0b0f19;
   color: #fff;
   border-radius: 12px;
-  padding: 2.5rem 1.5rem;
+  padding: 3rem 2rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 400px;
+  align-items: center;
+  text-align: center;
+  height: 420px;
+  width: 100%;
 }
 
-/* Staggering the cards vertically */
-.seox-stat-card:nth-child(2) {
-  transform: translateY(-40px);
-}
-
-.seox-stat-card:nth-child(3) {
-  transform: translateY(-80px);
+/* Staggering removed for better alignment as per user request */
+.seox-stat-card:nth-child(n) {
+  transform: none;
 }
 
 .seox-stat-card h3 {
@@ -373,12 +380,13 @@
 
 .seox-stat-number {
   margin-top: auto;
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   font-weight: 800;
-  text-align: right;
+  text-align: center;
   position: relative;
   z-index: 10;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
 }
 
 /* Card Glow Overlays */

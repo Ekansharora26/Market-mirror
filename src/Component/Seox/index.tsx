@@ -21,7 +21,7 @@ const CountUp: React.FC<{ end: number; suffix?: string; duration?: number }> = (
   const [count, setCount] = useState(0);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-  
+
   useEffect(() => {
     if (isInView) {
       let start = 0;
@@ -38,7 +38,7 @@ const CountUp: React.FC<{ end: number; suffix?: string; duration?: number }> = (
       return () => clearInterval(timer);
     }
   }, [isInView, end, duration]);
-  
+
   return (
     <span ref={ref}>
       {count}{suffix}
@@ -68,7 +68,7 @@ const SeoxPoc: React.FC = () => {
             <div className="seox-logo">
               <img src="/logo.png" alt="Market Mirror" style={{ maxHeight: '42px', filter: 'brightness(0) invert(1)' }} />
             </div>
-            
+
             <ul className="seox-menu">
               <li>Home</li>
               <li>Work</li>
@@ -114,17 +114,17 @@ const SeoxPoc: React.FC = () => {
 
             {/* Hero Visuals */}
             <div className="seox-hero-visuals">
-              <motion.div 
+              <motion.div
                 className="seox-floating-element seox-element-rocket"
                 style={{ background: 'rgba(255,255,255,0.05)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.1)', padding: '10px', borderRadius: '20px' }}
               >
-                <img 
-                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=400" 
-                  alt="Marketing Tools" 
+                <img
+                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=400"
+                  alt="Marketing Tools"
                   style={{ width: '100px', height: '100px', borderRadius: '15px', objectFit: 'cover' }}
                 />
               </motion.div>
-              
+
               <motion.div
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
@@ -137,14 +137,14 @@ const SeoxPoc: React.FC = () => {
                   className="seox-hero-img"
                 />
               </motion.div>
-              
-              <motion.div 
+
+              <motion.div
                 className="seox-floating-element seox-element-target"
                 style={{ background: 'rgba(255,255,255,0.05)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.1)', padding: '10px', borderRadius: '20px' }}
               >
-                <img 
-                  src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=400" 
-                  alt="Business Strategy" 
+                <img
+                  src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=400"
+                  alt="Business Strategy"
                   style={{ width: '120px', height: '120px', borderRadius: '15px', objectFit: 'cover' }}
                 />
               </motion.div>
@@ -156,7 +156,7 @@ const SeoxPoc: React.FC = () => {
       {/* ─── 1.5 PARTNER BAR (SOCIAL PROOF) ────────────────────── */}
       <section className="seox-partner-bar">
         <div className="seox-partner-scroll">
-          <motion.div 
+          <motion.div
             className="seox-partner-track"
             animate={{ x: ["0%", "-50%"] }}
             transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
@@ -196,27 +196,27 @@ const SeoxPoc: React.FC = () => {
               <FadeUpSection delay={0.1}>
                 <div className="seox-stat-card">
                   <div className="seox-card-glow glow-1"></div>
-                  <h3>Global Clients<br />Worldwide</h3>
+                  <h3>Global Clients</h3>
                   <p>Partnering with businesses across the globe to achieve outstanding insights.</p>
-                  <div className="seox-stat-number"><CountUp end={500} suffix=" +" /></div>
+                  <div className="seox-stat-number"><CountUp end={100} suffix="+" /></div>
                 </div>
               </FadeUpSection>
 
               <FadeUpSection delay={0.3}>
                 <div className="seox-stat-card">
                   <div className="seox-card-glow glow-2"></div>
-                  <h3>Dedicated Years<br />of Experience</h3>
+                  <h3>Projects Finished</h3>
                   <p>A decade of operational excellence delivering incalculable success to our clients.</p>
-                  <div className="seox-stat-number"><CountUp end={10} suffix=" +" /></div>
+                  <div className="seox-stat-number"><CountUp end={10} suffix="k+" /></div>
                 </div>
               </FadeUpSection>
 
               <FadeUpSection delay={0.5}>
                 <div className="seox-stat-card">
                   <div className="seox-card-glow glow-3"></div>
-                  <h3>Research Reports<br />Published</h3>
+                  <h3>Research Reports</h3>
                   <p>Comprehensive market analysis across all sectors and industries globally.</p>
-                  <div className="seox-stat-number"><CountUp end={1} suffix="K +" /></div>
+                  <div className="seox-stat-number"><CountUp end={1} suffix="k+" /></div>
                 </div>
               </FadeUpSection>
 
@@ -246,9 +246,9 @@ const SeoxPoc: React.FC = () => {
 
             <FadeUpSection delay={0.2}>
               <div className="seox-services-visual">
-                <img 
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2070" 
-                  alt="Agency Team Working Together" 
+                <img
+                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2070"
+                  alt="Agency Team Working Together"
                 />
               </div>
             </FadeUpSection>
@@ -270,9 +270,9 @@ const SeoxPoc: React.FC = () => {
               ))}
             </div>
           </div>
-          
+
           <div className="seox-footer-divider"></div>
-          
+
           <div className="seox-footer-bottom">
             <div className="seox-footer-copy">
               © 2026 Market Mirror Insights Pvt. Ltd. All rights reserved.
