@@ -66,7 +66,7 @@ const SeoxPoc: React.FC = () => {
         <div className="seox-container">
           <nav className="seox-nav">
             <div className="seox-logo">
-              <img src="/logo.png" alt="Market Mirror" style={{ maxHeight: '42px', filter: 'brightness(0) invert(1)' }} />
+              <img src="/logo.png" alt="Lumzy" style={{ maxHeight: '42px', filter: 'brightness(0) invert(1)' }} />
             </div>
 
             <ul className="seox-menu">
@@ -103,7 +103,7 @@ const SeoxPoc: React.FC = () => {
                 <br /> Dream Business
               </h1>
               <p className="seox-desc">
-                Welcome to Market Mirror. We are a team of experts who know how to execute effective research campaigns that will boost your visibility, strategy, and reputation.
+                Welcome to Lumzy. We are a team of experts who know how to execute effective research campaigns that will boost your visibility, strategy, and reputation.
               </p>
 
               <div className="seox-audit-form">
@@ -235,7 +235,7 @@ const SeoxPoc: React.FC = () => {
                 <div className="seox-service-eyebrow">
                   <span style={{ color: '#000', fontSize: '1.2rem' }}>✹</span> BUSINESS RESEARCH
                 </div>
-                <h2>Amazing Service<br />at Market Mirror</h2>
+                <h2>Amazing Service<br />at Lumzy</h2>
                 <p>
                   Valuably operating in the MR world for nearly a decade, our team has been performing marvelous robust engagements
                   handling innovative requirements that translate to solid business decisions.
@@ -262,7 +262,7 @@ const SeoxPoc: React.FC = () => {
         <div className="seox-container">
           <div className="seox-footer-top">
             <div className="seox-footer-logo">
-              <img src="/logo.png" alt="Market Mirror" style={{ maxHeight: '42px', filter: 'brightness(0) invert(1)' }} />
+              <img src="/logo.png" alt="Lumzy" style={{ maxHeight: '42px', filter: 'brightness(0) invert(1)' }} />
             </div>
             <div className="seox-footer-socials">
               {['Twitter', 'Instagram', 'Dribbble', 'LinkedIn'].map((social) => (
@@ -275,7 +275,7 @@ const SeoxPoc: React.FC = () => {
 
           <div className="seox-footer-bottom">
             <div className="seox-footer-copy">
-              © 2026 Market Mirror Insights Pvt. Ltd. All rights reserved.
+              © 2026 Lumzy Insights Pvt. Ltd. All rights reserved.
             </div>
             <div className="seox-footer-legal">
               <a href="#" className="seox-footer-link">Privacy Policy</a>

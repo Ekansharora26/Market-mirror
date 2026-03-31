@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
       <div className="navbar-inner">
         {/* Logo */}
         <a href="#">
-          <img src="/logo.png" alt="Market Mirror" style={{ maxHeight: '45px' }} />
+          <img src="/logo.png" alt="Lumzy" style={{ maxHeight: '45px' }} />
         </a>
 
         {/* Desktop Links */}

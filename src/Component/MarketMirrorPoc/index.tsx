@@ -2,7 +2,7 @@ import Navbar from './Navbar';
 import Hero from './Hero';
 import Works from './Works';
 
-const MarketMirrorPoc: React.FC = () => {
+const LumzyPoc: React.FC = () => {
   return (
     <div style={{ backgroundColor: '#050505', minHeight: '100vh' }}>
       <Navbar />
@@ -22,7 +22,7 @@ const MarketMirrorPoc: React.FC = () => {
         <div className="seox-container" style={{ maxWidth: '1320px', margin: '0 auto', padding: '0 4vw' }}>
           <div className="seox-footer-top" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '40px' }}>
             <div className="seox-footer-logo">
-              <img src="/logo.png" alt="Market Mirror" style={{ maxHeight: '42px', filter: 'brightness(0) invert(1)' }} />
+              <img src="/logo.png" alt="Lumzy" style={{ maxHeight: '42px', filter: 'brightness(0) invert(1)' }} />
             </div>
             <div className="seox-footer-socials" style={{ display: 'flex', gap: '25px' }}>
               {['Twitter', 'Instagram', 'Dribbble', 'LinkedIn'].map((social) => (
@@ -34,7 +34,7 @@ const MarketMirrorPoc: React.FC = () => {
           <div className="seox-footer-divider" style={{ height: '1px', backgroundColor: 'rgba(255,255,255,0.1)', marginBottom: '40px' }}></div>
           
           <div className="seox-footer-bottom" style={{ display: 'flex', justifyContent: 'space-between', opacity: '0.5', fontSize: '0.85rem' }}>
-            <div>© 2026 Market Mirror Insights Pvt. Ltd. All rights reserved.</div>
+            <div>© 2026 Lumzy Insights Pvt. Ltd. All rights reserved.</div>
             <div style={{ display: 'flex', gap: '30px' }}>
               <a href="#" style={{ color: '#fff', textDecoration: 'none' }}>Privacy Policy</a>
               <a href="#" style={{ color: '#fff', textDecoration: 'none' }}>Terms of Service</a>
@@ -51,4 +51,4 @@ const MarketMirrorPoc: React.FC = () => {
   );
 };
 
-export default MarketMirrorPoc;
+export default LumzyPoc;

@@ -7,7 +7,7 @@ import './responsive.css';
 const heroSlides = [
   {
     img: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2069',
-    title: 'WELCOME TO MARKET MIRROR',
+    title: 'WELCOME TO LUMZY',
     lead: 'Extraordinary art studio & creative minimal',
   },
   {
@@ -43,12 +43,12 @@ const services = [
 const portfolioItems = [
   { id: 1, title: 'RETAIL STUDY', category: 'WEB DESIGN', img: '/port_retail.png' },
   { id: 2, title: 'EV CARS STUDY', category: 'BRANDING', img: '/port_ev.png' },
-  { id: 3, title: 'LIFE IN LOCKDOWN', category: 'PHOTOGRAPHY', img: '/p1.png' },
+  { id: 3, title: 'HEALTH & WELLNESS TRENDS', category: 'PHOTOGRAPHY', img: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=2070' },
   { id: 4, title: 'BFSI ANALYSIS', category: 'ILLUSTRATOR', img: '/p2.png' },
-  { id: 5, title: 'REAL ESTATE', category: 'WEB DESIGN', img: '/p3.png' },
-  { id: 6, title: 'AGRICULTURE', category: 'BRANDING', img: '/p4.png' },
-  { id: 7, title: 'FRUIT JUICES', category: 'PHOTOGRAPHY', img: '/hero.png' },
-  { id: 8, title: 'E-COMMERCE', category: 'ILLUSTRATOR', img: '/about_history.png' },
+  { id: 5, title: 'REAL ESTATE', category: 'WEB DESIGN', img: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070' },
+  { id: 6, title: 'AGRICULTURE', category: 'BRANDING', img: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=2070' },
+  { id: 7, title: 'CPG CONSUMER STUDY', category: 'PHOTOGRAPHY', img: '/hero.png' },
+  { id: 8, title: 'GLOBAL DIGITAL TRENDS', category: 'ILLUSTRATOR', img: '/about_history.png' },
 ];
 
 
@@ -91,16 +91,14 @@ const BlossomPoc: React.FC = () => {
       <aside className={`blossom-sidebar ${menuOpen ? 'open' : ''}`}>
         <div className="blossom-logo-area">
           <div className="blossom-logo">
-            <img src="/logo.png" alt="Market Mirror" />
+            <img src="/logo.png" alt="Lumzy" />
           </div>
         </div>
 
         <nav className="blossom-nav">
           <ul>
             <li className="active"><a href="#home">HOME</a></li>
-            <li className="has-dropdown">
-              <a href="#about">ABOUT US</a> <span className="dropdown-arrow">▾</span>
-            </li>
+            <li><a href="#about">ABOUT US</a></li>
             <li><a href="#work">WORK</a></li>
             <li><a href="#services">SERVICES</a></li>
             <li><a href="#case-studies">CASE STUDIES</a></li>
@@ -288,7 +286,7 @@ const BlossomPoc: React.FC = () => {
           <div className="footer-container">
             <div className="footer-top">
               <div className="footer-logo">
-                <img src="/logo.png" alt="Market Mirror" style={{ height: '50px', width: 'auto' }} />
+                <img src="/logo.png" alt="Lumzy" style={{ height: '50px', width: 'auto' }} />
               </div>
               <div className="footer-socials">
                 <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
@@ -302,7 +300,7 @@ const BlossomPoc: React.FC = () => {
             
             <div className="footer-bottom">
               <div className="footer-copyright">
-                © 2026 Market Mirror Insights Pvt. Ltd. All rights reserved.
+                © 2026 Lumzy Insights Pvt. Ltd. All rights reserved.
               </div>
               <div className="footer-legal">
                 <a href="#">Privacy Policy</a>
