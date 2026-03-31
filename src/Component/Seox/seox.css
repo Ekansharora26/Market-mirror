@@ -8,6 +8,8 @@
   background-color: #0b0f19;
   min-height: 100vh;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .seox-body h1,
@@ -30,10 +32,9 @@
   min-height: 100vh;
   background-color: #0b0f19;
   overflow: hidden;
-  padding-top: 80px;
-  padding-bottom: 5rem;
+  padding-top: 140px;
+  padding-bottom: 1rem;
 }
-
 /* Abstract Mesh Glows */
 .seox-glow-red {
   position: absolute;
@@ -163,11 +164,10 @@
 }
 
 .seox-btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(196, 255, 51, 0.2);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(187, 252, 44, 0.25);
 }
 
-/* Hero Content */
 .seox-hero-content {
   position: relative;
   z-index: 10;
@@ -175,7 +175,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 .seox-eyebrow {
@@ -303,22 +303,27 @@
 
 .seox-stats-grid {
   display: grid;
-  grid-template-columns: 350px 1fr;
-  gap: 4rem;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 6rem;
+  align-items: center;
 }
 
 .seox-stats-info h2 {
-  font-size: 3rem;
+  font-size: 3.1rem;
   font-weight: 800;
-  line-height: 1.1;
-  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 2.5rem;
   color: #0b0f19;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
 }
 
 .seox-stats-info p {
   color: #4b5563;
-  font-size: 1.05rem;
-  line-height: 1.7;
+  font-size: 1.07rem;
+  line-height: 1.8;
+  max-width: 480px;
+  margin-top: 0;
 }
 
 .seox-stats-cards {
@@ -526,9 +531,9 @@
 /* ─── Partner Bar Section ────────────────────────────────── */
 .seox-partner-bar {
   background-color: #0b0f19;
-  padding: 3.5rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  overflow: hidden;
+  padding: 4rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
 }
 
 .seox-partner-scroll {

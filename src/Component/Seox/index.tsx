@@ -155,23 +155,21 @@ const SeoxPoc: React.FC = () => {
 
       {/* ─── 1.5 PARTNER BAR (SOCIAL PROOF) ────────────────────── */}
       <section className="seox-partner-bar">
-        <div className="seox-container">
-          <div className="seox-partner-scroll">
-            <motion.div 
-              className="seox-partner-track"
-              animate={{ x: ["0%", "-50%"] }}
-              transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
-            >
-              {[
-                'Google', 'Meta', 'Amazon', 'Microsoft', 'Netflix', 'Shopify', 'Paypal', 'Stripe',
-                'Google', 'Meta', 'Amazon', 'Microsoft', 'Netflix', 'Shopify', 'Paypal', 'Stripe'
-              ].map((partner, index) => (
-                <div key={index} className="seox-partner-logo">
-                  {partner}
-                </div>
-              ))}
-            </motion.div>
-          </div>
+        <div className="seox-partner-scroll">
+          <motion.div 
+            className="seox-partner-track"
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
+          >
+            {[
+              'Google', 'Meta', 'Amazon', 'Microsoft', 'Netflix', 'Shopify', 'Paypal', 'Stripe',
+              'Google', 'Meta', 'Amazon', 'Microsoft', 'Netflix', 'Shopify', 'Paypal', 'Stripe'
+            ].map((partner, index) => (
+              <div key={index} className="seox-partner-logo">
+                {partner}
+              </div>
+            ))}
+          </motion.div>
         </div>
       </section>
 
@@ -183,7 +181,7 @@ const SeoxPoc: React.FC = () => {
             {/* Left Info block */}
             <FadeUpSection>
               <div className="seox-stats-info">
-                <h2>The Results Speak<br />for Themselves</h2>
+                <h2>The Results Speak<br />For Themselves</h2>
                 <p>
                   Established in 2009, we are a full-service market research firm.
                   We aspire to be your most reliable research and consulting partner,
