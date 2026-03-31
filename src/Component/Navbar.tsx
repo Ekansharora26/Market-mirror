@@ -2,15 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { Search, Menu, X } from 'lucide-react';
 
 const NAV_LINKS = [
-  { name: 'Home',     href: '#' },
-  { name: 'Works',    href: '#works' },
-  { name: 'About',    href: '#about' },
+  { name: 'Home', href: '#' },
+  { name: 'Work', href: '#work' },
+  { name: 'About Us', href: '#about' },
   { name: 'Our Team', href: '#team' },
-  { name: 'News',     href: '#news' },
-  { name: 'Contact',  href: '#contact' },
+  { name: 'Case Studies', href: '#news' },
+  { name: 'Contact Us', href: '#contact' },
 ];
 
-const SECTION_IDS = ['contact', 'works', 'about', 'team', 'news'];
+const SECTION_IDS = ['contact', 'work', 'about', 'team', 'news'];
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,7 +25,12 @@ const Navbar: React.FC = () => {
       for (const id of SECTION_IDS) {
         const el = document.getElementById(id);
         if (el && window.scrollY >= el.offsetTop - 100) {
-          current = id === 'team' ? 'Our Team' : id.charAt(0).toUpperCase() + id.slice(1);
+          if (id === 'team') current = 'Our Team';
+          else if (id === 'work') current = 'Work';
+          else if (id === 'about') current = 'About Us';
+          else if (id === 'news') current = 'Case Studies';
+          else if (id === 'contact') current = 'Contact Us';
+          else current = id.charAt(0).toUpperCase() + id.slice(1);
         }
       }
       setActiveSection(current);
@@ -88,9 +93,11 @@ const Navbar: React.FC = () => {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          max-width: 1400px;
+          max-width: 1320px;
+          width: 100%;
           margin: 0 auto;
-          padding: 0 40px;
+          padding: 0 4vw;
+          box-sizing: border-box;
         }
 
         .desktop-menu {

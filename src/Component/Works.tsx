@@ -18,21 +18,21 @@ const PORTFOLIO = [
 const SERVICES = [
   {
     icon: <Lightbulb size={48} strokeWidth={1} />,
-    title: 'Expert Network Services',
+    title: 'Expert Networks',
     description:
-      'Connect with industry thought leaders & professionals to gain actionable insights for your business strategies.',
+      'Unlock direct access to industry leaders for critical, data-driven insights that drive core business strategy.',
   },
   {
     icon: <Rocket size={48} strokeWidth={1} />,
     title: 'UX / CX Research',
     description:
-      'Understand user behaviors and elevate customer experiences through comprehensive online and offline research.',
+      'Dive deep into user psychology to elevate customer journeys with comprehensive behavioral research methodologies.',
   },
   {
     icon: <BarChart3 size={48} strokeWidth={1} />,
     title: 'Research & Analytics',
     description:
-      'Meaningful data analysis and robust methodology delivering total quality to facilitate solid business decisions.',
+      'Leverage advanced proprietary analytics and robust frameworks to ensure total clarity in mission-critical decisions.',
   },
 ];
 
@@ -64,12 +64,12 @@ const Works: React.FC = () => {
     : PORTFOLIO.filter((p) => p.category === active);
 
   return (
-    <section id="works" style={{ backgroundColor: '#151515' }}>
+    <section id="work" style={{ backgroundColor: '#111' }}>
 
       {/* ── Capabilities Sub-Section (Formerly Services) ── */}
       <div className="capabilities-banner">
         <div className="container">
-          <div style={{ overflow: 'hidden', marginBottom: '2rem' }}>
+          <div style={{ overflow: 'hidden', marginBottom: '2rem', textAlign: 'center' }}>
             <motion.span
               className="works-eyebrow"
               variants={maskReveal}
@@ -81,16 +81,16 @@ const Works: React.FC = () => {
             </motion.span>
           </div>
 
-          <div style={{ overflow: 'hidden' }}>
+          <div style={{ overflow: 'hidden', textAlign: 'center' }}>
             <motion.h2
               className="works-title"
-              style={{ textAlign: 'left', display: 'block', maxWidth: '700px' }}
+              style={{ marginInline: 'auto' }}
               variants={maskRevealDelayed(0.15)}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
             >
-              We provide genius solutions for your business
+              WE PROVIDE GENIUS SOLUTIONS <br /> FOR YOUR BUSINESS
             </motion.h2>
           </div>
         </div>
@@ -196,32 +196,46 @@ const Works: React.FC = () => {
         }
         .capabilities-grid {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 4rem;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 5rem;
         }
-        .capability-card { text-align: left; }
-        .capability-icon { color: white; margin-bottom: 2rem; }
+        .capability-card { 
+          text-align: center; 
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          height: 100%;
+          padding: 0 1rem;
+        }
+        .capability-icon { color: white; margin-bottom: 2.5rem; display: flex; justify-content: center; }
         .capability-title {
           font-size: 1.35rem;
           font-weight: 800;
           color: white;
           font-family: var(--font-heading);
-          margin-bottom: 1.25rem;
+          margin-bottom: 1.5rem;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
         }
         .capability-desc {
           color: #888;
           font-size: 0.95rem;
-          line-height: 1.8;
-          margin-bottom: 2rem;
+          line-height: 1.85;
+          margin-bottom: 2.5rem;
+          flex-grow: 1;
         }
         .learn-more {
           display: inline-flex;
           align-items: center;
-          gap: 0.5rem;
+          justify-content: center;
+          gap: 0.75rem;
           color: white;
-          font-weight: 600;
-          font-size: 0.9rem;
-          transition: color 0.3s ease;
+          font-weight: 700;
+          font-size: 0.85rem;
+          text-transform: uppercase;
+          letter-spacing: 0.12em;
+          transition: all 0.3s ease;
+          margin-top: auto;
         }
         .learn-more:hover { color: var(--accent-blue); }
         .learn-more svg   { transition: transform 0.3s ease; }
@@ -229,30 +243,35 @@ const Works: React.FC = () => {
 
         .portfolio-header {
           text-align: center;
-          padding: 8rem 0 4rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 6rem 0 6rem;
           border-top: 1px solid rgba(255,255,255,0.05);
         }
         .works-eyebrow {
-          display: inline-block;
+          display: block;
           color: #888;
           font-size: 0.8rem;
           font-weight: 600;
           text-transform: uppercase;
           letter-spacing: 0.25em;
+          margin-bottom: 1.5rem;
         }
         .works-title {
-          display: inline-block;
           font-size: clamp(2.2rem, 4vw, 3.5rem);
           font-weight: 800;
           color: white;
           line-height: 1.15;
           font-family: var(--font-heading);
+          margin-bottom: 2rem;
+          max-width: 900px;
         }
         .works-filters {
           display: flex;
           justify-content: center;
           align-items: center;
-          gap: 0.75rem;
+          gap: 1.25rem;
           flex-wrap: wrap;
         }
         .filter-btn {

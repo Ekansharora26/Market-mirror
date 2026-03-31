@@ -65,9 +65,11 @@ img {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1320px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 4vw;
+  box-sizing: border-box;
 }
 
 /* ─── Scrollbar ──────────────────────────────────────────────────── */

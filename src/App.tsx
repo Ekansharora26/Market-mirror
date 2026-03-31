@@ -27,7 +27,7 @@ function App() {
 
           <div className="footer-bottom">
             <p className="footer-copy">
-              &copy; 2025 Market Mirror Insights Pvt. Ltd. All rights reserved.
+              &copy; 2026 Market Mirror Insights Pvt. Ltd. All rights reserved.
             </p>
             <div className="footer-legal">
               <a href="#" className="footer-legal-link">Privacy Policy</a>

@@ -86,18 +86,18 @@ const Hero: React.FC = () => {
             animate="visible"
             exit="hidden"
           >
-            <div style={{ overflow: 'hidden', marginBottom: '1.25rem' }}>
+            <div style={{ marginBottom: '1.25rem' }}>
               <motion.h1
                 variants={maskReveal}
                 style={{
                   fontSize: 'clamp(2.8rem, 8vw, 6.875rem)',
                   lineHeight: 1.1,
+                  fontFamily: 'var(--font-heading)',
                   fontWeight: 800,
                   textTransform: 'uppercase',
-                  letterSpacing: '0.02em',
-                  maxWidth: '1100px',
+                  letterSpacing: '0.04em',
+                  maxWidth: '1200px',
                   marginInline: 'auto',
-                  fontFamily: 'var(--font-heading)',
                 }}
               >
                 {slide.title}
@@ -136,7 +136,7 @@ const Hero: React.FC = () => {
             animate={{ y: 0 }}
             transition={{ duration: 1, ease: EASE_CINEMATIC, delay: 0.9 }}
           >
-            <a href="#works" className="hero-cta">Explore Works</a>
+            <a href="#work" className="hero-cta">Explore Work</a>
           </motion.div>
         </div>
       </div>
